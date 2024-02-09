@@ -16,7 +16,6 @@ public class Action {
 		String s = "https://www.flipkart.com/";
 		driver.navigate().to(s);
 		driver.manage().window().maximize();
-		
 		WebElement web = driver.findElement(By.xpath("//a[@title='Login']"));
 		Actions a = new Actions(driver);
 		a.moveToElement(web).build().perform();
